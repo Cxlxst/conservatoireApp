@@ -396,7 +396,7 @@ namespace Conservatoire.DAL
             try
             {
                 maConnexionSql = Connexion.getInstance(provider, dataBase, uid, mdp);
-                string req = "UPDATE seance SET TRANCHE='@horaire',JOUR='@jour',NIVEAU='@niveau',CAPACITE='@capacite' WHERE NUMSEANCE = @numseance";
+                string req = "UPDATE seance SET TRANCHE=@horaire,JOUR=@jour,NIVEAU=@niveau,CAPACITE=@capacite WHERE NUMSEANCE = @numseance";
                 Ocom = maConnexionSql.reqExec(req);
                 Ocom.Parameters.AddWithValue("horaire", horaire);
                 Ocom.Parameters.AddWithValue("jour", jour);
