@@ -11,7 +11,7 @@ namespace Conservatoire.DAL
     {
         // Attributs de connexion statiques
         private static string provider = "localhost";
-        private static string dataBase = "conservatoire";
+        private static string dataBase = "conservatoireApp";
         private static string uid = "root";
         private static string mdp = "";
 
